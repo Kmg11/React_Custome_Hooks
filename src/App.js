@@ -1,5 +1,27 @@
+import { useToggle } from "./Hook/useToggle";
+
+/**
+ * How To Use
+ *  - const [value, togglevVlue] = useToggle(defaultValue);
+ * 		- If No defaultValue : Default Value is false
+ * 	- toggleValue()
+ * 		- Reverse Current Value
+ * 	- toggleValue(true || false)
+ * 		- Set Your Value
+ */
+
 function App() {
-	return <div className="App"></div>;
+	const [showBox, toggleShowBox] = useToggle();
+
+	return (
+		<div className="App">
+			<button onClick={toggleShowBox}>Toggle</button>
+			<button onClick={() => toggleShowBox(true)}>Show</button>
+			<button onClick={() => toggleShowBox(false)}>Hide</button>
+
+			{showBox && <div className="box"></div>}
+		</div>
+	);
 }
 
 export default App;
