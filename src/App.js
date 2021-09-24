@@ -11,7 +11,7 @@ import { useToggle } from "./Hook/useToggle";
  */
 
 function App() {
-	const [showBox, toggleShowBox] = useToggle();
+	const [showBox, toggleShowBox] = useToggle(false);
 
 	return (
 		<div className="App">
