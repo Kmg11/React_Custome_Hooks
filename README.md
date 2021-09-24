@@ -1,19 +1,19 @@
-# useToggle
+# useTimeout
 
-- toggle between true & false
+- Help you create timeout easy
 
 ---
 
 ### How To Use
 
-    - const [value, togglevValue] = useToggle(defaultValue);
-    	- If No defaultValue : Default Value is false
+    - const { reset, clear } = useTimeout(callback, delay);
+    	- You Can Use It Without { reset, clear } - [ useTimeout(callback, delay) ]
 
-    - toggleValue()
-    	- Reverse Current Value
+    - reset()
+    	- Reset Timeout
 
-    - toggleValue(true || false)
-    	- Set Your Value
+    - clear()
+    	- Clear Timeout
 
 ---
 
@@ -21,7 +21,7 @@
 
 #### Hook
 
-![useToggle Hook](images/useToggle.png "useToggle Hook")
+![useTimeout Hook](images/useTimeout.png "useTimeout Hook")
 
 #### Example
 

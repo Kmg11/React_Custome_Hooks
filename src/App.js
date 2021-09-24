@@ -1,27 +1,28 @@
-import { useToggle } from "./Hook/useToggle";
+import { useState } from "react";
+import { useTimeout } from "./Hook/useTimeout";
 
 /**
  * How To Use
- *  - const [value, togglevVlaue] = useToggle(defaultValue);
- * 		- If No defaultValue : Default Value is false
- * 
- * 	- toggleValue()
- * 		- Reverse Current Value
- * 
- * 	- toggleValue(true || false)
- * 		- Set Your Value
+ *  - const { reset, clear } = useTimeout(callback, delay);
+ * 		- You Can Use It Without { reset, clear } - [ useTimeout(callback, delay) ]
+ *
+ * 	- reset()
+ * 		- Reset Timeout
+ *
+ * 	- clear()
+ * 		- Clear Timeout
  */
 
 function App() {
-	const [showBox, toggleShowBox] = useToggle(false);
+	const [count, setCount] = useState(10);
+	const { reset, clear } = useTimeout(() => setCount(0), 1000);
 
 	return (
 		<div className="App">
-			<button onClick={toggleShowBox}>Toggle</button>
-			<button onClick={() => toggleShowBox(true)}>Show</button>
-			<button onClick={() => toggleShowBox(false)}>Hide</button>
-
-			{showBox && <div className="box"></div>}
+			<div>Count: {count}</div>
+			<button onClick={() => setCount((c) => c + 1)}>Increase</button>
+			<button onClick={clear}>Clear Timeout</button>
+			<button onClick={reset}>Reset Timeout</button>
 		</div>
 	);
 }
