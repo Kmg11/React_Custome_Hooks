@@ -1,21 +1,36 @@
-# useUpdateEffect
+# useArray
 
-- Help You Avoid useEffect Side Effect [ Work Only When Update Happen ]
+- Help You Handle Arrays In State Easy
 
 ---
 
 ### How To Use
 
-    - How To Use
-    	- useUpdateEffect(callback, [dependencies]);
+    		- const { array, set, push, filter, update, remove, clear } = useArray(array);
+
+    		- array: Your Array
+
+    		- set(newArray): Set New Array
+
+    		- unshift(element): Add Item To End Of Array
+
+    		- push(element): Add Item To Start Of Array
+
+    		- filter(callback): Filter Array
+
+    		- update(index, element): Update Index Value
+
+    		- remove(index): Remove Element By Index
+
+    		- clear(): Clear All Array Items
 
 ---
 
 ## Screenshots
 
-#### useUpdateEffect Hook
+#### useArray Hook
 
-![useUpdateEffect Hook](images/useUpdateEffect.png "useUpdateEffect Hook")
+![useArray Hook](images/useArray.png "useArray Hook")
 
 #### Example
 
