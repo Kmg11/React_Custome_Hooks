@@ -1,15 +1,14 @@
 import { useState } from "react";
-import { useDebounce } from "./Hook/useDebounce";
+import { useUpdateEffect } from "./Hook/useUpdateEffect";
 
 /**
  * How To Use
- * - You Need useTimeout Hook To Work With useDebounce
- *  - useDebounce(callback, delay, [dependencies]);
+ *  - useUpdateEffect(callback, [dependencies]);
  */
 
 function App() {
 	const [count, setCount] = useState(10);
-	useDebounce(() => alert("Done"), 1000, [count]);
+	useUpdateEffect(() => alert("Done"), [count]);
 
 	return (
 		<div className="App">

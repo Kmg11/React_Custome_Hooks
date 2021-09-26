@@ -1,31 +1,22 @@
-# useDebounce
+# useUpdateEffect
 
-- Add Debounce Function Easy
+- Help You Avoid useEffect Side Effect [ Work Only When Update Happen ]
 
 ---
 
 ### How To Use
 
     - How To Use
-    	- You Need useTimeout Hook To Work With useDebounce
-    	- useDebounce(callback, delay, [dependencies]);
+    	- useUpdateEffect(callback, [dependencies]);
 
 ---
 
 ## Screenshots
 
-#### useDebounce Hook
+#### useUpdateEffect Hook
 
-![useDebounce Hook](images/useDebounce.png "useDebounce Hook")
+![useUpdateEffect Hook](images/useUpdateEffect.png "useUpdateEffect Hook")
 
-#### Example useDebounce
+#### Example
 
 ![Example](images/example.png "Example")
-
-#### Hook useTimeout
-
-![useTimeout Hook](images/useTimeout.png "useTimeout Hook")
-
-#### Example useTimeout
-
-![Example](images/useTimeoutExample.png "Example")
