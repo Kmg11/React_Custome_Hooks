@@ -24,8 +24,6 @@ import { useState } from "react";
 export function useArray(defaultValue) {
 	const [array, setArray] = useState(defaultValue);
 
-	console.log(1);
-
 	function unshift(element) {
 		setArray((prev) => [element, ...prev]);
 	}
