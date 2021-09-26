@@ -1,28 +1,20 @@
 import { useState } from "react";
-import { useTimeout } from "./Hook/useTimeout";
+import { useDebounce } from "./Hook/useDebounce";
 
 /**
  * How To Use
- *  - const { reset, clear } = useTimeout(callback, delay);
- * 		- You Can Use It Without { reset, clear } - [ useTimeout(callback, delay) ]
- *
- * 	- reset()
- * 		- Reset Timeout
- *
- * 	- clear()
- * 		- Clear Timeout
+ * - You Need useTimeout Hook To Work With useDebounce
+ *  - useDebounce(callback, delay, [dependencies]);
  */
 
 function App() {
 	const [count, setCount] = useState(10);
-	const { reset, clear } = useTimeout(() => setCount(0), 1000);
+	useDebounce(() => alert("Done"), 1000, [count]);
 
 	return (
 		<div className="App">
 			<div>Count: {count}</div>
 			<button onClick={() => setCount((c) => c + 1)}>Increase</button>
-			<button onClick={clear}>Clear Timeout</button>
-			<button onClick={reset}>Reset Timeout</button>
 		</div>
 	);
 }

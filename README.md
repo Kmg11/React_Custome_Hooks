@@ -1,28 +1,31 @@
-# useTimeout
+# useDebounce
 
-- Help you create timeout easy
+- Add Debounce Function Easy
 
 ---
 
 ### How To Use
 
-    - const { reset, clear } = useTimeout(callback, delay);
-    	- You Can Use It Without { reset, clear } - [ useTimeout(callback, delay) ]
-
-    - reset()
-    	- Reset Timeout
-
-    - clear()
-    	- Clear Timeout
+    - How To Use
+    	- You Need useTimeout Hook To Work With useDebounce
+    	- useDebounce(callback, delay, [dependencies]);
 
 ---
 
 ## Screenshots
 
-#### Hook
+#### useDebounce Hook
+
+![useDebounce Hook](images/useDebounce.png "useDebounce Hook")
+
+#### Example useDebounce
+
+![Example](images/example.png "Example")
+
+#### Hook useTimeout
 
 ![useTimeout Hook](images/useTimeout.png "useTimeout Hook")
 
-#### Example
+#### Example useTimeout
 
-![Example](images/example.png "Example")
+![Example](images/useTimeoutExample.png "Example")
