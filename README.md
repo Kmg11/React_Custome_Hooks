@@ -1,36 +1,20 @@
-# useArray
+# usePrevious
 
-- Help You Handle Arrays In State Easy
+- Help You Save Previous Value
 
 ---
 
 ### How To Use
 
-    		- const { array, set, push, filter, update, remove, clear } = useArray(array);
-
-    		- array: Your Array
-
-    		- set(newArray): Set New Array
-
-    		- unshift(element): Add Item To End Of Array
-
-    		- push(element): Add Item To Start Of Array
-
-    		- filter(callback): Filter Array
-
-    		- update(index, element): Update Index Value
-
-    		- remove(index): Remove Element By Index
-
-    		- clear(): Clear All Array Items
+    		- const previousValue = usePrevious(value);
 
 ---
 
 ## Screenshots
 
-#### useArray Hook
+#### usePrevious Hook
 
-![useArray Hook](images/useArray.png "useArray Hook")
+![usePrevious Hook](images/usePrevious.png "usePrevious Hook")
 
 #### Example
 

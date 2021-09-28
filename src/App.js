@@ -1,44 +1,31 @@
-import { useArray } from "./Hook/useArray";
+import { useState } from "react";
+import { usePrevious } from "./Hook/usePrevious";
 
 /**
  * How To Use
- *  - const { array, set, push, filter, update, remove, clear } = useArray(array);
- *
- *	- array: Your Array
- *
- *	- set(newArray): Set New Array
- *
- *	- unshift(element): Add Item To End Of Array
- *
- *	- push(element): Add Item To Start Of Array
- *
- * 	- filter(callback): Filter Array
- *
- * 	- update(index, element): Update Index Value
- *
- * 	- remove(index): Remove Element By Index
- *
- * 	- clear(): Clear All Array Items
+ * 	- const previousValue = usePrevious(value);
  */
 
 function App() {
-	const { array, set, unshift, push, filter, update, remove, clear } = useArray(
-		[1, 2, 3, 4, 5, 6]
-	);
+	const [count, setCount] = useState(0);
+	const [name, setName] = useState("Kirolos");
+	const previousCount = usePrevious(count);
+	const previousName = usePrevious(name);
 
 	return (
 		<div className="App">
-			<div>{array.join(", ")}</div>
+			<div>
+				{count} - {previousCount}
+			</div>
 
-			<button onClick={() => unshift(7)}>Add Before 7</button>
-			<button onClick={() => push(7)}>Add After 7</button>
-			<button onClick={() => update(1, 9)}>Change Second Element To 9</button>
-			<button onClick={() => remove(1)}>Remove Second Element</button>
-			<button onClick={() => filter((prev) => prev < 3)}>
-				Keep Numbers Less Than 3
+			<div>
+				{name} - {previousName}
+			</div>
+
+			<button onClick={() => setCount((currentCount) => currentCount + 1)}>
+				Increment
 			</button>
-			<button onClick={() => set([1, 2])}>Set To 1, 2</button>
-			<button onClick={clear}>Clear</button>
+			<button onClick={() => setName("John")}>Change Name</button>
 		</div>
 	);
 }
