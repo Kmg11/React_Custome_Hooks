@@ -1,20 +1,40 @@
 # usePrevious
 
-- Help You Save Previous Value
+- Help You Create History For State Values
 
 ---
 
 ### How To Use
 
-    		- const previousValue = usePrevious(value);
+    - const [
+    		value,
+    		setValue,
+    	{
+    		history,
+    		pointer,
+    		back,
+    		forward,
+    		go
+    	}
+    ] = useStateWithHistory(defaultValue, { capacity: 5 });
+
+    - value: Current Value
+    - setValue: Set New Value
+    - history: History Of The State
+    - pointer: The Current Index
+    - back: Go Back To Previous Index
+    - forward: Go Forward To Previous Index
+    - go: Go To Specific Index
+    - defaultValue: Start Value
+    - capacity: [ Optional ] Capacity Of History By Default 10
 
 ---
 
 ## Screenshots
 
-#### usePrevious Hook
+#### useStateWithHistory Hook
 
-![usePrevious Hook](images/usePrevious.png "usePrevious Hook")
+![useStateWithHistory Hook](images/useStateWithHistory.png "useStateWithHistory Hook")
 
 #### Example
 
