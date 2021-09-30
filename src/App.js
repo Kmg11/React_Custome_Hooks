@@ -1,53 +1,26 @@
-import { useState } from "react";
-import { useStateWithHistory } from "./Hook/useStateWithHistory";
+import { useAsync } from "./Hook/useAsync";
 
 /**
  * How To Use
- * 	- const [
- * 			value,
- * 			setValue,
- *  		{
- *  			history,
- *  			pointer,
- *  			back,
- *  			forward,
- *  			go
- *  		}
- *  	] = useStateWithHistory(defaultValue, { capacity: 5 });
- *
- * 	- value: Current Value
- * 	- setValue: Set New Value
- * 	- history: History Of The State
- * 	- pointer: The Current Index
- * 	- back: Go Back To Previous Index
- * 	- forward: Go Forward To Previous Index
- * 	- go: Go To Specific Index
- * 	- defaultValue: Start Value
- * 	- capacity: [ Optional ] Capacity Of History By Default 10
+ * 	- const { loading, error, value } = useAsync(promise, dependencies);
  */
 
 function App() {
-	const [name, setName] = useState("Kirolos");
-	const [count, setCount, { history, pointer, back, forward, go }] =
-		useStateWithHistory(1, { capacity: 5 });
+	const { loading, error, value } = useAsync(() => {
+		return new Promise((resolve, reject) => {
+			const success = true;
+
+			setTimeout(() => {
+				success ? resolve("Hi") : reject("Error");
+			}, 1000);
+		});
+	});
 
 	return (
 		<div className="App">
-			<div>Count - {count}</div>
-			<div>history - {history.join(", ")}</div>
-			<div>pointer - {pointer}</div>
-			<div>name - {name}</div>
-
-			<button onClick={() => setCount((currentCount) => currentCount * 2)}>
-				Double
-			</button>
-			<button onClick={() => setCount((currentCount) => currentCount + 1)}>
-				Increment
-			</button>
-			<button onClick={back}>Back</button>
-			<button onClick={forward}>Forward</button>
-			<button onClick={() => go(2)}>Go To Index 2</button>
-			<button onClick={() => setName("John")}>Change Name</button>
+			<div>Loading: {loading.toString()}</div>
+			<div>{error}</div>
+			<div>{value}</div>
 		</div>
 	);
 }
