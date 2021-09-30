@@ -6,17 +6,7 @@
 
 ### How To Use
 
-    - const [
-    		value,
-    		setValue,
-    	{
-    		history,
-    		pointer,
-    		back,
-    		forward,
-    		go
-    	}
-    ] = useStateWithHistory(defaultValue, { capacity: 5 });
+    - const [count, setCount, { history, pointer, back, forward, go }] = useStateWithHistory(1, { capacity: 5 });
 
     - value: Current Value
     - setValue: Set New Value
