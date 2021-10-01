@@ -21,7 +21,7 @@ export function useAsync(callback, dependencies = []) {
 			.finally(() => setLoading(false));
 
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [...dependencies, callback]);
+	}, dependencies);
 
 	useEffect(() => {
 		callbackMemoized();
