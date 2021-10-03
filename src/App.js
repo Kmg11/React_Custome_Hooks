@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { useFetch } from "./Hook/useFetch";
+import { useAxios } from "./Hook/useAxios";
 
 /**
  * How To Use
- * 	- const { fetchData, loading, error, data } = useFetch(url, options, dependencies, runNow);
+ * 	- const { fetchData, loading, error, data } = useAxios(url, options, dependencies, runNow);
  *
  * 	- fetchData:
  * 			- Fetch Data Function Help You Fetch Data Again
@@ -13,7 +13,7 @@ import { useFetch } from "./Hook/useFetch";
  * 	- data: Data Back From API
  * 	- url: End Point
  * 	- options:
- * 			- Fetch Options By Default {headers: Set To Json } and Signal
+ * 			- Fetch Options By Default {headers: Set To Json } and cancelToken
  * 			- By Default {method: "GET"}
  * 			- You Can Change Method, Add Body Like {method: "POST", body: JSON.stringify({ title: "hello" }
  * 	- dependencies: Array Of Dependencies To Use It [runNow: true]
@@ -24,14 +24,14 @@ import { useFetch } from "./Hook/useFetch";
 
 function App() {
 	const [id, setId] = useState(1);
-	const { fetchData, loading, error, data } = useFetch(
+	const { fetchData, loading, error, data } = useAxios(
 		`https://jsonplaceholder.typicode.com/posts/${id}`,
 		{},
 		[id],
 		true
 	);
 
-	// const { fetchData, loading, error, data } = useFetch(
+	// const { fetchData, loading, error, data } = useAxios(
 	// 	`https://jsonplaceholder.typicode.com/posts/`,
 	// 	{
 	// 		method: "POST",

@@ -1,12 +1,12 @@
-# useFetch
+# useAxios
 
-- Help You Handle API Request Easy [ GET, POST, DELETE, PUT, PATCH ]
+- Help You Handle API Request Easy With Axios [ GET, POST, DELETE, PUT, PATCH ]
 
 ---
 
 ### How To Use
 
-    - const { fetchData, loading, error, data } = useFetch(url, options, dependencies, runNow);
+    - const { fetchData, loading, error, data } = useAxios(url, options, dependencies, runNow);
 
     - fetchData:
     		- Fetch Data Function Help You Fetch Data Again
@@ -16,7 +16,7 @@
     - data: Data Back From API
     - url: End Point
     - options:
-    		- Fetch Options By Default {headers: Set To Json } and Signal
+    		- Fetch Options By Default {headers: Set To Json } and cancelToken
     		- By Default {method: "GET"}
     		- You Can Change Method, Add Body
     		- Example - Like {method: "POST", body: JSON.stringify({ title: "hello" }
@@ -29,9 +29,9 @@
 
 ## Screenshots
 
-#### useFetch Hook
+#### useAxios Hook
 
-![useFetch Hook](images/useFetch.png "useFetch Hook")
+![useAxios Hook](images/useAxios.png "useAxios Hook")
 
 #### Example
 
