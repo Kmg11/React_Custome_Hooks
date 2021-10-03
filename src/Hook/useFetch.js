@@ -47,10 +47,7 @@ export function useFetch(url, options = {}, dependencies = [], runNow = true) {
 		fetch(url, { ...DEFAULT_OPTIONS, ...options })
 			.then((res) => {
 				if (res.ok) return res.json();
-
-				return res
-					.json()
-					.then(() => Promise.reject("An error occurred. Awkward.."));
+				throw Error("An error occurred. Awkward..");
 			})
 			.then(setData)
 			.catch((err) => {
