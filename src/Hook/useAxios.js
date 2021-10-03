@@ -48,7 +48,6 @@ export function useAxios(url, options = {}, dependencies = [], runNow = true) {
 		axios({ url, ...DEFAULT_OPTIONS, ...options })
 			.then(({ data }) => setData(data))
 			.catch((err) => {
-				if (axios.isCancel(err)) setError(err.message);
 				if (!axios.isCancel(err)) setError("Error " + err.message);
 			})
 			.finally(() => setLoading(false));
