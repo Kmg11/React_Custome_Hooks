@@ -1,6 +1,7 @@
 import { ToggleExample } from "./Examples/useToggle";
 import { TimeoutExample } from "./Examples/useTimeout";
 import { DebounceExample } from "./Examples/useDebounce";
+import { UpdateEffectExample } from "./Examples/useUpdateEffect";
 
 function App() {
 	return (
@@ -8,6 +9,7 @@ function App() {
 			<ToggleExample />
 			<TimeoutExample />
 			<DebounceExample />
+			<UpdateEffectExample />
 		</div>
 	);
 }
