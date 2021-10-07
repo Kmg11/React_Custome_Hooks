@@ -15,8 +15,8 @@
 
 #### useStorage Hook
 
-![useStorage Hook](images/useStorage.png "useStorage Hook")
+![useStorage Hook](images/useStorage/useStorage.png "useStorage Hook")
 
 #### Example
 
-![Example](images/example.png "Example")
+![Example](images/useStorage/example.png "Example")
