@@ -8,6 +8,7 @@ import { StorageExample } from "./Examples/useStorage";
 import { StateWithHistoryExample } from "./Examples/useStateWithHistory";
 import { AsyncExample } from "./Examples/useAsync";
 import { FetchExample } from "./Examples/useFetch";
+import { AxiosExample } from "./Examples/useAxios";
 
 function App() {
 	return (
@@ -22,6 +23,7 @@ function App() {
 			<StateWithHistoryExample />
 			<AsyncExample />
 			<FetchExample />
+			<AxiosExample />
 		</div>
 	);
 }
