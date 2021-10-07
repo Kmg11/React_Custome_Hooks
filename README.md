@@ -31,8 +31,8 @@
 
 #### useAxios Hook
 
-![useAxios Hook](images/useAxios.png "useAxios Hook")
+![useAxios Hook](images/useAxios/useAxios.png "useAxios Hook")
 
 #### Example
 
-![Example](images/example.png "Example")
+![Example](images/useAxios/example.png "Example")
