@@ -31,8 +31,8 @@
 
 #### useFetch Hook
 
-![useFetch Hook](images/useFetch.png "useFetch Hook")
+![useFetch Hook](images/useFetch/useFetch.png "useFetch Hook")
 
 #### Example
 
-![Example](images/example.png "Example")
+![Example](images/useFetch/example.png "Example")
