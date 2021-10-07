@@ -21,8 +21,8 @@
 
 #### Hook
 
-![useToggle Hook](images/useToggle.png "useToggle Hook")
+![useToggle Hook](images/useToggle/useToggle.png "useToggle Hook")
 
 #### Example
 
-![Example](images/example.png "Example")
+![Example](images/useToggle/example.png "Example")
