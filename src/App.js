@@ -3,6 +3,7 @@ import { TimeoutExample } from "./Examples/useTimeout";
 import { DebounceExample } from "./Examples/useDebounce";
 import { UpdateEffectExample } from "./Examples/useUpdateEffect";
 import { ArrayExample } from "./Examples/useArray";
+import { PreviousExample } from "./Examples/usePrevious";
 
 function App() {
 	return (
@@ -12,6 +13,7 @@ function App() {
 			<DebounceExample />
 			<UpdateEffectExample />
 			<ArrayExample />
+			<PreviousExample />
 		</div>
 	);
 }
