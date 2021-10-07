@@ -24,8 +24,8 @@
 
 #### useStateWithHistory Hook
 
-![useStateWithHistory Hook](images/useStateWithHistory.png "useStateWithHistory Hook")
+![useStateWithHistory Hook](images/useStateWithHistory/useStateWithHistory.png "useStateWithHistory Hook")
 
 #### Example
 
-![Example](images/example.png "Example")
+![Example](images/useStateWithHistory/example.png "Example")
