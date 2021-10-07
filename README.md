@@ -13,3 +13,5 @@
 ### - usePrevious
 
 ### - useStorage
+
+### - useStateWithHistory
