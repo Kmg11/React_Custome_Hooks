@@ -6,6 +6,7 @@ import { ArrayExample } from "./Examples/useArray";
 import { PreviousExample } from "./Examples/usePrevious";
 import { StorageExample } from "./Examples/useStorage";
 import { StateWithHistoryExample } from "./Examples/useStateWithHistory";
+import { AsyncExample } from "./Examples/useAsync";
 
 function App() {
 	return (
@@ -18,6 +19,7 @@ function App() {
 			<PreviousExample />
 			<StorageExample />
 			<StateWithHistoryExample />
+			<AsyncExample />
 		</div>
 	);
 }

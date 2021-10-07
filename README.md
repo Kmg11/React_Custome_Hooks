@@ -15,3 +15,5 @@
 ### - useStorage
 
 ### - useStateWithHistory
+
+### - useAsync
