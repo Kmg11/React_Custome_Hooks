@@ -14,8 +14,8 @@
 
 #### usePrevious Hook
 
-![usePrevious Hook](images/usePrevious.png "usePrevious Hook")
+![usePrevious Hook](images/usePrevious/usePrevious.png "usePrevious Hook")
 
 #### Example
 
-![Example](images/example.png "Example")
+![Example](images/usePrevious/example.png "Example")
