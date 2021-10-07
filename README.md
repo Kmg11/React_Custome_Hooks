@@ -30,8 +30,8 @@
 
 #### useArray Hook
 
-![useArray Hook](images/useArray.png "useArray Hook")
+![useArray Hook](images/useArray/useArray.png "useArray Hook")
 
 #### Example
 
-![Example](images/example.png "Example")
+![Example](images/useArray/example.png "Example")
