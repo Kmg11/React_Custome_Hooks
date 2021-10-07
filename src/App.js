@@ -7,6 +7,7 @@ import { PreviousExample } from "./Examples/usePrevious";
 import { StorageExample } from "./Examples/useStorage";
 import { StateWithHistoryExample } from "./Examples/useStateWithHistory";
 import { AsyncExample } from "./Examples/useAsync";
+import { FetchExample } from "./Examples/useFetch";
 
 function App() {
 	return (
@@ -20,6 +21,7 @@ function App() {
 			<StorageExample />
 			<StateWithHistoryExample />
 			<AsyncExample />
+			<FetchExample />
 		</div>
 	);
 }
