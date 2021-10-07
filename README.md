@@ -16,16 +16,8 @@
 
 #### useDebounce Hook
 
-![useDebounce Hook](images/useDebounce.png "useDebounce Hook")
+![useDebounce Hook](images/useDebounce/useDebounce.png "useDebounce Hook")
 
 #### Example useDebounce
 
-![Example](images/example.png "Example")
-
-#### Hook useTimeout
-
-![useTimeout Hook](images/useTimeout.png "useTimeout Hook")
-
-#### Example useTimeout
-
-![Example](images/useTimeoutExample.png "Example")
+![Example](images/useDebounce/example.png "Example")
