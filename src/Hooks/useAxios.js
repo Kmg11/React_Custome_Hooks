@@ -45,17 +45,8 @@ export function useAxios(url, options = {}, dependencies = [], runNow = true) {
 		setError(undefined);
 		setData(undefined);
 
-<<<<<<< HEAD:src/Hooks/useFetch.js
-		fetch(url, { ...DEFAULT_OPTIONS, ...options })
-			.then((res) => {
-				if (res.ok) return res.json();
-				throw Error("An error occurred. Awkward..");
-			})
-			.then(setData)
-=======
 		axios({ url, ...DEFAULT_OPTIONS, ...options })
 			.then(({ data }) => setData(data))
->>>>>>> useAxios:src/Hooks/useAxios.js
 			.catch((err) => {
 				if (!axios.isCancel(err)) setError("Error " + err.message);
 			})
