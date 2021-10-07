@@ -43,6 +43,8 @@ export function AxiosExample() {
 
 	return (
 		<div>
+			<h2>Use Axios</h2>
+
 			<div>{id}</div>
 			<button onClick={fetchData}>Trigger Fetch</button>
 			<button onClick={() => setId((currentId) => currentId + 1)}>
