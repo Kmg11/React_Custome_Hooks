@@ -15,8 +15,8 @@
 
 #### useUpdateEffect Hook
 
-![useUpdateEffect Hook](images/useUpdateEffect.png "useUpdateEffect Hook")
+![useUpdateEffect Hook](images/useUpdateEffect/useUpdateEffect.png "useUpdateEffect Hook")
 
 #### Example
 
-![Example](images/example.png "Example")
+![Example](images/useUpdateEffect/example.png "Example")
