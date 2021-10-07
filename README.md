@@ -21,8 +21,8 @@
 
 #### Hook
 
-![useTimeout Hook](images/useTimeout.png "useTimeout Hook")
+![useTimeout Hook](images/useTimeout/useTimeout.png "useTimeout Hook")
 
 #### Example
 
-![Example](images/example.png "Example")
+![Example](images/useTimeout/example.png "Example")
