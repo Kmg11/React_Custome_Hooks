@@ -14,8 +14,8 @@
 
 #### useAsync Hook
 
-![useAsync Hook](images/useAsync.png "useAsync Hook")
+![useAsync Hook](images/useAsync/useAsync.png "useAsync Hook")
 
 #### Example
 
-![Example](images/example.png "Example")
+![Example](images/useAsync/example.png "Example")
