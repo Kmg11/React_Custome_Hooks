@@ -4,6 +4,7 @@ import { DebounceExample } from "./Examples/useDebounce";
 import { UpdateEffectExample } from "./Examples/useUpdateEffect";
 import { ArrayExample } from "./Examples/useArray";
 import { PreviousExample } from "./Examples/usePrevious";
+import { StorageExample } from "./Examples/useStorage";
 
 function App() {
 	return (
@@ -14,6 +15,7 @@ function App() {
 			<UpdateEffectExample />
 			<ArrayExample />
 			<PreviousExample />
+			<StorageExample />
 		</div>
 	);
 }
